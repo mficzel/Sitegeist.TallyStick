@@ -1,0 +1,19 @@
+Sitegeist_TallyStick_CacheStatistics:
+  frontend: Neos\Cache\Frontend\VariableFrontend
+  backend: Neos\Cache\Backend\FileBackend
+
+# Flow_Session_*
+Flow_Session_MetaData:
+  persistent: true
+  frontend: Neos\Cache\Frontend\VariableFrontend
+  backend: Sitegeist\TallyStick\Cache\TallyStickBackend
+  backendOptions:
+    backend: Neos\Cache\Backend\FileBackend
+    backendOptions: []
+Flow_Session_Storage:
+  persistent: true
+  frontend: Neos\Cache\Frontend\VariableFrontend
+  backend: Sitegeist\TallyStick\Cache\TallyStickBackend
+  backendOptions:
+    backend: Neos\Cache\Backend\FileBackend
+    backendOptions: []
